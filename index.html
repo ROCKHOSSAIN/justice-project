@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en"  data-theme="cupcake">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Problem solving</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
 <!-- google font  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700;800&family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
 <!-- font-awesome  -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <script>
     tailwind.config = {
       theme: {
         extend: {
           backgroundImage: {
-            'hero-bg': "url('./images/banner.png')",
+            // 'banner-background': "url('./images/banner4.png')",
           }
+        //   gradient: {
+        //     'my-gradient': "linear-gradient(to right, #4dc0b5, #3490dc)",
+        //   }
+          
           
         }
       }
@@ -30,383 +33,555 @@
   </script>
 
 <style>
-    .Garamond{
-        font-family: 'EB Garamond', serif;
-        
-    }
-    .Poppins{
-        font-family: 'Poppins', sans-serif;
-
-    }
-    
+   .Lato{
+    font-family: 'Lato', sans-serif;
+   } 
 </style>
+
 </head>
-<body>
-  <!-- container mx-auto -->
-  <!-- max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 -->
-    <header class=" container mx-auto">
-        <nav class="my-5">
-            <div class="navbar bg-base-100 justify-between flex flex-col  lg:flex-row">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home  </a></li>
-                        <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
-                        <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
-                        <li><a>Blog <i class="fa-solid fa-greater-than"></i></a></li>
-                        <li><a>Contact Us <i class="fa-solid fa-greater-than"></i></a></li>
-                    </ul>
-                  </div>
-                  <div class="flex  items-center ">
-                    <img class="w-12" src="images/business.png" alt="">
-                    <a class="btn text-sm lg:text-4xl Garamond font-extrabold">Justice</a>
-                  </div>
-                 
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 Poppins text-base font-normal text-[#707070]">
-                    <li><a>Home  </a></li>
-                    <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
-                    <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
-                    <li><a>Blog <i class="fa-solid fa-greater-than"></i></a></li>
-                    <li><a>Contact Us <i class="fa-solid fa-greater-than"></i></a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn  bg-[#B68C5A] text-xs lg:text-sm mt-5 lg:mt-0  text-white">Free Consultation</a>
-                </div>
-              </div>
-        </nav>
+<body class="Lato">
+    <!-- <header class="max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-1"> -->
+    <header class=" bg-red-500 h-24">
+         
+      <div class="navbar container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li tabindex="0">
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
 
-        <section >
-            <div class="bg-hero-bg bg-cover bg-no-repeat py-36 ">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
-                  <div class=" lg:mt-28 ">
-                    <h1 class="lg:mb-6 Garamond text-xl lg:text-6xl font-extrabold">We Provide Effective <br>Legal Solutions</h1>
-                    <p class="mb-5 text-xs lg:text-sm font-normal">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour..</p>
-                    <div class="flex flex-col lg:flex-row justify-center items-center gap-3 ">
-                        <div><input type="text" placeholder="Search your services" class="py-3 rounded-md px-3 lg:px-32" /></div>
-                        <button class="btn  bg-[#8f5c1d] border-0 px-6 text-white">Search</button>
+     
+            
+        </header>
+        <main class="container mx-auto mt-12">
+        
+          <!-- banner section  -->
+          <section >
+             
+              <div>
+                      <div class="carousel w-full relative ">
+                          <div id="slide1" class="carousel-item relative w-full ">
+                            <img src="images/banner4.png" class=" mx-auto md:mx-auto md:w-[80%] lg:w-full  bg-my-gradient  " />
+                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide4" class="btn btn-circle">❮</a> 
+                              <a href="#slide2" class="btn btn-circle">❯</a>
+                            </div>
+                          </div> 
+                          <div id="slide2" class="carousel-item relative w-full">
+                            <img src="images/banner3.png" class="w-full" />
+                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide1" class="btn btn-circle">❮</a> 
+                              <a href="#slide3" class="btn btn-circle">❯</a>
+                            </div>
+                          </div> 
+                          <div id="slide3" class="carousel-item relative w-full">
+                            <img src="images/banner2.png" class="w-full" />
+                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide2" class="btn btn-circle">❮</a> 
+                              <a href="#slide4" class="btn btn-circle">❯</a>
+                            </div>
+                          </div> 
+                          <div id="slide4" class="carousel-item relative w-full">
+                            <img src="images/banner1.png" class="w-full" />
+                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide3" class="btn btn-circle">❮</a> 
+                              <a href="#slide1" class="btn btn-circle">❯</a>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                   <div class="absolute text-center left-[25%] top-[40%]">
+                          <h1 class="text-white font-extrabold text-sm lg:text-7xl mb-6 ">Exotic tastes at your doorstep</h1>
+                          <p class="font-normal text-xl mb-10 text-white">We supply highly quality organic products</p>
+                          <button class="text-white font-extrabold text-xs lg:text-xl bg-[#F85559] p-1 md:p-3 lg:p-5 rounded-lg">Shop Now</button>
+              </div>
+  
+              
+             
+          </section>
+          <!-- fruit items  -->
+          <section>
+              <div class="max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-1 flex  hidden lg:flex items-center justify-center gap-20 bg-white relative -top-40 ">
+                  <div >
+                      <img src="images/fruit1.png" alt="">
+                      <p class="text-center">Strawberry</p>
+                  </div>
+                  <div>
+                      <img src="images/fruit2.png" alt="">
+                      <p class="text-center">Orange</p>
+                  </div>
+                  <div>
+                      <img src="images/fruit3.png" alt="">
+                      <p class="text-center">Mango</p>
+                  </div>
+                  <div>
+                      <img src="images/fruit4.png" alt="">
+                      <p class="text-center">Strawberry</p>
+                  </div>
+                  <div>
+                      <img src="images/fruit5.png" alt="">
+                      <p class="text-center">Mango</p>
+                  </div>
+                  
+  
+              </div>
+          </section>
+  
+          <!-- timing section  -->
+  
+          <section>
+              <div class="flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-72 mt-16 ">
+                  <div>
+                      <h1 class="font-extrabold text-5xl mb-6 text-center lg:text-start">Deal of the day</h1>
+                      <p class="font-medium text-base text-[#12121299] text-center lg:text-start">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+                  </div>
+                  <div>
+                      <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                          <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl font-extrabold">
+                              <span style="--value:15;"></span>:
+                            </span>
+                            <span class="font-normal">days</span>
+                          </div> 
+                          <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl font-extrabold ">
+                              <span style="--value:10;"></span> :
+                            </span>
+                            hours
+                          </div> 
+                          <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl font-extrabold ">
+                              <span style="--value:24;"></span> :
+                            </span>
+                            minutes
+                          </div> 
+                          <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl font-extrabold ">
+                              <span style="--value:37;"></span> 
+                            </span>
+                            seconds
+                          </div>
+                        </div>
+                  </div>
+              </div>
+  
+              <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+
+                <div class="card w-96 bg-base-100 shadow-xl mt-24">
+                    <figure><img src="images/fruit6.png" alt="Shoes" class="mb-9" /></figure>
+                    <div class="card-body ">
+                      <h2 class=" text-center text-2xl font-extralight mb-8">12.90$ - 18.85$</h2>
+                      <p class="text-center mb-6">Apples</p>
+                      <div class="rating rating-lg rating-half w-28 mx-auto ">
+                        <input type="radio" name="rating-9" class="rating-hidden" />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1 " />
+                        <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                      </div>
+                      
                     </div>
-                   
+    
+                    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn text-[#F85559] " onclick="my_modal_5.showModal()">Details</button>
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <form method="dialog" class="modal-box">
+        <img src="images/fruit6.png" alt="Shoes" class="mb-2 w-32 mx-auto" />
+        <h3 class="font-bold text-lg text-center">Apples!</h3>
+        <p class="py-4 text-center">You will get the most amazing fruits</p>
+        <div class="modal-action flex-col">
+          <!-- if there is a button in form, it will close the modal -->
+          <div class="rating rating-lg rating-half w-28 mb-4 mx-auto">
+            <input type="radio" name="rating-9" class="rating-hidden" />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-1 " />
+            <input type="radio" name="rating-9" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          </div>
+          <div class="flex-row text-center">
+            <button class="bg-transparent border-2 border-[#F85559] text-[#F85559] mr-4  p-2 rounded-md">Close</button>
+            <button class="bg-[#F85559] p-2 rounded-md">Buy Now</button>
+          </div>
+         
+        </div>
+      </form>
+    </dialog>
                   </div>
-                </div>
-              </div>
-        </section>
-    </header>
-    <main>
-        <!-- practice area section  -->
-        <section class="container mx-auto mt-28">
-          <div>
-            
-            <h1 class="text-[#414040] Garamond font-extrabold text-5xl text-center mb-6">The Legal Practice Area</h1>
-        <p class="text-[#707070] Poppins font-normal text-sm text-center w-[40%] mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-        </div>
-
-        <!-- <div class="text-center mt-16 flex flex-col lg:flex-row justify-evenly items-center gap-10 "> -->
-        <div class="text-center mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 ">
-          <div class="card  bg-base-100 shadow-xl">
-            <figure><img src="images/business.png" alt="business" /></figure>
-            <div class="card-body">
-              <h2 class="text-cente text-[#414040] Garamond font-extrabold text-4xl">Business Law</h2>
-              <p class="w-[100%] lg:w-[258px] text-[#707070] font-medium text-sm-[258px] mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-              <div >
-                <img class="mx-auto" src="images/Frame.png" alt="">
-              </div>
-              
-              </div> 
-            </div>
-          <div class="card  bg-base-100 shadow-xl">
-            <figure><img src="images/criminal.png" alt="business" /></figure>
-            <div class="card-body">
-              <h2 class="text-center text-[#414040] Garamond font-extrabold text-4xl">Criminal Law</h2>
-              <p class="w-[100%] lg:w-[258px] mx-auto text-[#707070] font-medium text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-              <div >
-                <img class="mx-auto" src="images/Frame.png" alt="">
-              </div>
-              
-              </div> 
-            </div>
-          <div class="card  bg-base-100 shadow-xl">
-            <figure><img src="images/child.png" alt="business" /></figure>
-            <div class="card-body">
-              <h2 class="text-center text-[#414040] Garamond font-extrabold text-4xl">Child Support</h2>
-              <p class="w-[100%] lg:w-[258px] mx-auto text-[#707070] font-medium text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-              <div >
-                <img class="mx-auto" src="images/Frame.png" alt="">
-              </div>
-              
-              </div> 
-            </div>
-          <div class="card  bg-base-100 shadow-xl">
-            <figure><img src="images/education.png" alt="business" /></figure>
-            <div class="card-body">
-              <h2 class="text-center text-[#414040] Garamond font-extrabold text-4xl">Educational Law</h2>
-              <p class="w-[100%] lg:w-[258px] mx-auto text-[#707070] font-medium text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-              <div >
-                <img class="mx-auto" src="images/Frame.png" alt="">
-              </div>
-              
-              </div> 
-            </div>
-          <div class="card  bg-base-100 shadow-xl">
-            <figure><img src="images/divorce.png" alt="business" /></figure>
-            <div class="card-body">
-              <h2 class="text-center text-[#414040] Garamond font-extrabold text-4xl">Divorce Law</h2>
-              <p class="w-[100%] lg:w-[258px] mx-auto text-[#707070] font-medium text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-              <div >
-                <img class="mx-auto" src="images/Frame.png" alt="">
-              </div>
-              
-              </div> 
-            </div>
-          <div class="card  bg-base-100 shadow-xl">
-            <figure><img src="images/tax.png" alt="business" /></figure>
-            <div class="card-body">
-              <h2 class="text-center text-[#414040] Garamond font-extrabold text-4xl">Business Law</h2>
-              <p class="w-[100%] lg:w-[258px] mx-auto text-[#707070] font-medium text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-              <div >
-                <img class="mx-auto" src="images/Frame.png" alt="">
-              </div>
-              
-              </div> 
-            </div>
-
-
-
+    
+    
+                  <!-- 2nd fruit review  -->
+                  <div class="card w-96 bg-base-100 shadow-xl mt-24">
+                    <figure><img src="images/fruit7.png" alt="Shoes" class="mb-9" /></figure>
+                    <div class="card-body ">
+                      <h2 class=" text-center text-2xl font-extralight mb-8">12.90$ - 18.85$</h2>
+                      <p class="text-center mb-6">Apples</p>
+                      <div class="rating rating-lg rating-half w-28 mx-auto ">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1 " />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                      </div>
+                      
+                    </div>
+    
+                    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn text-[#F85559]" onclick="my_modal_6.showModal()">Details</button>
+    <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+      <form method="dialog" class="modal-box">
+        <img src="images/fruit7.png" alt="Shoes" class="mb-2 w-32 mx-auto" />
+        <h3 class="font-bold text-lg text-center">Apples!</h3>
+        <p class="py-4 text-center">You will get the most amazing fruits</p>
+        <div class="modal-action flex-col">
+          <!-- if there is a button in form, it will close the modal -->
+          <div class="rating rating-lg rating-half w-28 mb-4 mx-auto">
+            <input type="radio" name="rating-10" class="rating-hidden" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1 " />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
           </div>
-        </div>
-
-
-        </section>
-
-        <!-- clients area section  -->
-        
-
-        <section class="container mx-auto mt-28">
-          <div>
-            
-            <h1 class="text-[#414040] Garamond font-extrabold text-5xl text-center mb-6">What Our Client Say</h1>
-        <p class="text-[#707070] Poppins font-normal text-sm text-center w-[40%] mx-auto mb-24">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-        </div>
-        <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-[full] h-[430px]">
-            <img  src="images/banner.png" class=" mx-auto " />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" class="btn btn-circle">❮</a> 
-              <a href="#slide2" class="btn btn-circle">❯</a>
-            </div>
-          </div> 
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="images/slider-1.jpg" class="mx-auto" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" class="btn btn-circle">❮</a> 
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-          </div> 
-          <div id="slide3" class="carousel-item relative w-full">
-            <img src="images/slider-2.jpg" class="mx-auto" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" class="btn btn-circle">❮</a> 
-              <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-          </div> 
-          <div id="slide4" class="carousel-item relative w-full">
-            <img src="images/slider-3.jpg" class="mx-auto" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" class="btn btn-circle">❮</a> 
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
+          <div class="flex-row text-center">
+            <button class="bg-transparent border-2 border-[#F85559] text-[#F85559] mr-4  p-2 rounded-md">Close</button>
+            <button class="bg-[#F85559] p-2 rounded-md">Buy Now</button>
           </div>
+         
         </div>
-
-        </section>
-
-
-        <!-- frequently ask question  -->
-       
-        <section class="container mx-auto mt-24">
-          <div>
-            <h1 class="text-[#414040] Garamond font-extrabold text-5xl text-center mb-6">Frequently Asked Any Questions</h1>
-        <p class="text-[#707070] Poppins font-normal text-sm text-center w-[40%] mx-auto mb-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-        </div>
-
-        <div class="flex flex-col-reverse lg:flex-row items-center justify-evenly gap-28">
-          <div>
-            <div class="collapse collapse-plus bg-base-200 p-7">
-              <input type="radio" name="my-accordion-3" checked="checked" /> 
-              <div class="collapse-title text-xl font-medium">
-                1.Are application fee waivers available?
-                            </div>
-              <div class="collapse-content"> 
-                <p class="w-[100%] lg:w-[504px] text-start text-[#707070] font-medium text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, . </p>
-              </div>
-            </div>
-            <div class="collapse collapse-plus bg-base-200 p-7">
-              <input type="radio" name="my-accordion-3" /> 
-              <div class="collapse-title text-xl font-medium">
-                2.Are application fee waivers available?
-                            </div>
-              <div class="collapse-content"> 
-                <p class="w-[100%] lg:w-[504px] text-start text-[#707070] font-medium text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, . </p>
-              </div>
-
-            </div>
-
-
-            <div class="collapse collapse-plus bg-base-200 p-7">
-              <input type="radio" name="my-accordion-3" /> 
-              <div class="collapse-title text-xl font-medium">
-                3.Are application fee waivers available?
-                            </div>
-              <div class="collapse-content"> 
-                <p class="w-[100%] lg:w-[504px] text-start text-[#707070] font-medium text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, . </p>
-              </div>
-            </div>
-            <div class="collapse collapse-plus bg-base-200 p-7">
-              <input type="radio" name="my-accordion-3" /> 
-              <div class="collapse-title text-xl font-medium">
-                4.Are application fee waivers available?
-                            </div>
-              <div class="collapse-content"> 
-                <p class="w-[100%] lg:w-[504px] text-start text-[#707070] font-medium text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, . </p>
-              </div>
-            </div>
-
-
+      </form>
+    </dialog>
+                  </div>
+    
+    <!-- 3rd fruit review  -->
+    <div class="card w-96 bg-base-100 shadow-xl mt-24">
+        <figure><img src="images/fruit8.png" alt="Shoes" class="mb-9" /></figure>
+        <div class="card-body ">
+          <h2 class=" text-center text-2xl font-extralight mb-8">12.90$ - 18.85$</h2>
+          <p class="text-center mb-6">Apples</p>
+          <div class="rating rating-lg rating-half w-28 mx-auto ">
+            <input type="radio" name="rating-11" class="rating-hidden" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1 " />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
           </div>
-          <div>
-            <img src="images/faq.png" alt="">
-          </div>
-        </div>
-        </section>
-
-        <!-- Contact With Us  -->
-        <section class="container mx-auto mt-24">
           
-          <div>
-            <h1 class="text-[#414040] Garamond font-extrabold text-5xl text-center mb-6">Contact With Us</h1>
-        <p class="text-[#707070] Poppins font-normal text-sm text-center w-[40%] mx-auto mb-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
         </div>
-
-        <div class="flex flex-col lg:flex-row items-center justify-center g-8">
-            <div class="text-center mt-16 grid grid-cols-1 lg:grid-cols-2">
-              <div class="card  bg-base-100 shadow-xl">
-                <figure><img src="images/location.png" alt="business" /></figure>
-                <div class="card-body">
-                  <h2 class="text-center text-[#414040] Garamond font-extrabold text-2xl">Address</h2>
-                  <p class="w-[100%] lg:w-[258px] text-[#707070] font-medium text-sm-[258px] mx-auto">A108 Adam Street,
-                    New York, NY 535022.</p>
-                  
-                  </div> 
-               </div>
-              <div class="card  bg-base-100 shadow-xl">
-                <figure><img src="images/call.png" alt="business" /></figure>
-                <div class="card-body">
-                  <h2 class="text-cente text-[#414040] Garamond font-extrabold text-2xl">Call Us</h2>
-                  <p class="w-[100%] lg:w-[258px] text-[#707070] font-medium text-sm-[258px] mx-auto">
-                    +88 01750 00 00 00 <br>
-                    +88 01750 00 00 00</p>
-                 
-                  </div> 
-               </div>
-              <div class="card  bg-base-100 shadow-xl">
-                <figure><img src="images/email.png" alt="business" /></figure>
-                <div class="card-body">
-                  <h2 class="text-cente text-[#414040] Garamond font-extrabold text-2xl">Email Us</h2>
-                  <p class="w-[100%] lg:w-[258px] text-[#707070] font-medium text-sm-[258px] mx-auto">
-                    info@gmail.com <br>
-                    info@gmail.com
-                  </p>
-                  
-                  </div> 
-               </div>
-              <div class="card  bg-base-100 shadow-xl">
-                <figure><img src="images/time.png" alt="business"></figure>
-                <div class="card-body">
-                  <h2 class="text-cente text-[#414040] Garamond font-extrabold text-2xl">Working Hours</h2>
-                  <p class="w-[100%] lg:w-[258px] text-[#707070] font-medium text-sm-[258px] mx-auto">
-                    Mon-Fri: 9AM to 5PM <br>
-                    Sunday: 9AM to 1 PM</p>
-                  
-                  </div> 
-               </div>
+    
+        <!-- Open the modal using ID.showModal() method -->
+    <button class="btn text-[#F85559]" onclick="my_modal_7.showModal()">Details</button>
+    <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+    <form method="dialog" class="modal-box">
+    <img src="images/fruit8.png" alt="Shoes" class="mb-2 w-32 mx-auto" />
+    <h3 class="font-bold text-lg text-center">Apples!</h3>
+    <p class="py-4 text-center">You will get the most amazing fruits</p>
+    <div class="modal-action flex-col">
+    <!-- if there is a button in form, it will close the modal -->
+    <div class="rating rating-lg rating-half w-28 mb-4 mx-auto">
+    <input type="radio" name="rating-11" class="rating-hidden" />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1 " />
+    <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    </div>
+    <div class="flex-row text-center">
+        <button class="bg-transparent border-2 border-[#F85559] text-[#F85559] mr-4  p-2 rounded-md">Close</button>
+        <button class="bg-[#F85559] p-2 rounded-md">Buy Now</button>
+      </div>
+    
+    </div>
+    </form>
+    </dialog>
+      </div>              
+    
+    
+      
+    <!-- 4th fruit review  -->
+    <div class="card w-96 bg-base-100 shadow-xl mt-24">
+        <figure><img src="images/fruit9.png" alt="Shoes" class="mb-9" /></figure>
+        <div class="card-body ">
+          <h2 class=" text-center text-2xl font-extralight mb-8">12.90$ - 18.85$</h2>
+          <p class="text-center mb-6">Apples</p>
+          <div class="rating rating-lg rating-half w-28 mx-auto ">
+            <input type="radio" name="rating-12" class="rating-hidden" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1 " />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
           </div>
-          <div class="flex flex-col gap-8  mt-10 lg:mt-0 mb-5 lg:mb-0">
-            <input type="text" placeholder="Your Name" class="input  border-2 text-black p-8" />
-            <input type="text" placeholder="Your Email" class="input  border-2 text-black p-8">
-            <input type="text" placeholder="Your Email" class="input  border-2 border-black p-8" />
-          </div>
+          
         </div>
-        </section>
-
-    </main>
-    <!-- footer section  -->
-    <!-- <footer class=" flex lg:flex-row justify-center items-center gap-20 footer p-10 bg-[#111] text-white">
-      <div class="">
-        <img class="w-28" src="images/logo.png" alt="">
-        <p class="w-[220px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-        </div>
-      <div>
-        <span class="footer-title">Usefull Link</span> 
-        <a class="link link-hover">Homes <br>
-          About Us <br>
-          Cases<br>
-          Blog<br>
-          Contact Us</a> 
+    
+        <!-- Open the modal using ID.showModal() method -->
+    <button class="btn text-[#F85559]" onclick="my_modal_8.showModal()">Details</button>
+    <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+    <form method="dialog" class="modal-box">
+    <img src="images/fruit9.png" alt="Shoes" class="mb-2 w-32 mx-auto" />
+    <h3 class="font-bold text-lg text-center">Apples!</h3>
+    <p class="py-4 text-center">You will get the most amazing fruits</p>
+    <div class="modal-action flex-col">
+    <!-- if there is a button in form, it will close the modal -->
+    <div class="rating rating-lg rating-half w-28 mb-4 mx-auto">
+    <input type="radio" name="rating-12" class="rating-hidden" />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1 " />
+    <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+    </div>
+    <div class="flex-row text-center">
+        <button class="bg-transparent border-2 border-[#F85559] text-[#F85559] mr-4  p-2 rounded-md">Close</button>
+        <button class="bg-[#F85559] p-2 rounded-md">Buy Now</button>
+      </div>
+    
+    </div>
+    </form>
+    </dialog>
+      </div>   
+    </div>
+    <div class="block text-center mt-12 ">
+        <button class="bg-[#F85559] p-4 text-white text-xl rounded-lg ">Shop All</button>
+    
+    </div>
+       
+    
+                  
+            </section>
+       <!-- team section  -->
+       <section class="bg-gradient bg-gray-500">
+        <div class="h-auto lg:h-[690px] mt-10 " style="background-image:url('images/team.png');background-repeat: no-repeat; background-size: cover; mix-blend-mode: overlay;">
+              <div class="text-center text-white lg:flex-row items-center lg:pt-28">
+                <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
+                <p class="mb-5 text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                    Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-32 justify-center">
+                    <div class="text-center text-white">
+                    <img src="images/member1.png" class="mx-auto mb-8" alt="">
+                    <h1 class="text-2xl font-medium">Awlad Hossain</h1>
+                    <p class="text-base mb-3">Fruits Expert</p>
+                    <div class="flex gap-4 items-center justify-center">
+                    <i class="fa-brands fa-facebook "></i>
+                    <i class="fa-brands fa-twitter "></i>
+                    <i class="fa-brands fa-linkedin "></i>
+                    </div>
+                    
+                </div>
+                <div class="text-center text-white">
+                    <img src="images/member2.png" class="mx-auto mb-8" alt="">
+                    <h1 class="text-2xl font-medium">Safia Chowdhury</h1>
+                    <p class="text-base mb-3">Fruits Expert</p>
+                    
+                    <div class="flex gap-4 items-center justify-center">
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-twitter "></i>
+                        <i class="fa-brands fa-linkedin "></i>
+                        </div>
+                </div>
+                <div class="text-center text-white">
+                    <img src="images/member3.png" class="mx-auto mb-8" alt="">
+                    <h1 class="text-2xl font-medium">Rokib Hossain</h1>
+                    <p class="text-base mb-3">Fruits Expert</p>
+                    <div class="flex gap-4 items-center justify-center">
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-twitter "></i>
+                        <i class="fa-brands fa-linkedin "></i>
+                        </div>
+                </div>
+                <div class="text-center text-white">
+                    <img src="images/member4.png" class="mx-auto mb-8" alt="">
+                    <h1 class="text-2xl font-medium">Chaity</h1>
+                    <p class="text-base mb-3">Fruits Expert</p>
+                    
+                    <div class="flex gap-4 items-center justify-center">
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-twitter "></i>
+                        <i class="fa-brands fa-linkedin "></i>
+                        </div>
+                </div>
         
-      </div> 
-      <div>
-        <span class="footer-title">Contact Now</span> 
-        <p>555 4th 5t NW, Washington <br>
-          DC 20530, United States</p>
-        <p>+88 01750 000 000 <br>
-          +88 01750 000 000</p>
-        <p>info@gmail.com <br>
-          info@gmail.com</p>
-      </div> 
-      <div>
-        <span class="footer-title">Subscribe</span> 
-        <p class="w-[220px]">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
-        <input class="p-5 rounded-sm" type="text" placeholder="Email Addresss">
-
-      </div>
-    </footer> -->
-
-    <footer class="footer p-10 bg-[#111111] text-[#FFF] text-base-content py-24">
-      <div class="lg:ml-28">
-        <div>
-          <img src="./images/logo.png" alt="">
+          </div>
         </div>
-        <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
-      </div> 
-      <div>
-        <span class="footer-title">Usefull Link</span> 
-        <a class="link link-hover">Home</a> 
-        <a class="link link-hover">About Us</a> 
-        <a class="link link-hover">Cases</a> 
-        <a class="link link-hover">Blog</a> 
-        <a class="link link-hover">Contact Us</a>
-      </div> 
-      <div>
-        <span class="footer-title">Contact Now</span> 
-        <a class="link link-hover">555 4th 5t NW, Washington <br> DC 20530, United States</a> 
-        <a class="link link-hover">+88 01750 000 000 <br> +88 01750 000 000</a> 
-        <a class="link link-hover">info@gmail.com <br> info@gmail.com</a> 
-      </div> 
-      <div>
-        <span class="footer-title">Subscribe</span> 
-        <a class="link link-hover">Subscribe for our latest & <br> Articles. We Won’t Give You <br> Spam Mails</a> 
-        <div class="flex flex-col lg:flex-row justify-center items-center">
-          <div><input class="py-2 px-4 rounded-lg mr-2" type="email" placeholder="Email Address"></div>
-          <div><button class="btn btn-active  bg-gray-500">Send</button></div>
-        </div>
-      </div>
-    </footer>
+    </section>
 
-</body>
-</html>
+    <!-- why choose us section  -->
+<!-- why choose us section  -->
+<section class="mt-20">
+  <div >
+      <h1 class="font-extrabold text-5xl mb-6 text-center ">Why Choose Us</h1>
+      <p class="font-medium text-base text-[#12121299] text-center mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+  
+  <!-- <div class=" grid grid-cols-3 items-center justify-center"> -->
+  <div class="text-center lg:text-start grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-32 ">
+      <div class="flex-col order-2 lg:order-1">
+          <div class=" lg:flex items-center gap-5 " >
+              <div>
+                  <i class="fa-solid fa-user-group"></i>
+              </div>
+              <div>
+                  <h2 class="text-2xl font-extrabold mb-5">Dedicated Team</h2>
+                  <hr class="border-1 border-black mx-auto lg:mx-0 w-16 lg:w-24 mb-5">
+                  <p class="text-base font-medium">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+          </div>
+          <div class=" lg:flex items-center gap-5 " >
+              <div>
+                  <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+                  <h2 class="text-2xl font-extrabold mb-5">Fresh is Best</h2>
+                  <hr class="border-1 border-black mx-auto lg:mx-0 w-16 lg:w-24 mb-5">
+                  <p class="text-base font-medium">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+          </div>
+          <div class=" lg:flex items-center gap-5 " >
+              <div>
+                  <i class="fa-solid fa-gift"></i>
+              </div>
+              <div>
+                  <h2 class="text-2xl font-extrabold mb-5">Gift Certificates</h2>
+                  <hr class="border-1 border-black mx-auto lg:mx-0 w-16 lg:w-24 mb-5">
+                  <p class="text-base font-medium">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+          </div>
+          
+          
+      </div>
+      <div class="order-1 lg:order-2 ">
+          <img src="images/whychoose1.png" class="w-full" alt="">
+      </div>
+      
+      <div class="flex-col order-3 lg:order-3 text-center lg:text-end">
+           <div class="flex flex-col-reverse lg:flex-row items-center gap-5">
+              
+              <div>
+                  <h2 class="text-2xl font-extrabold mb-5">Integrated Supplier</h2>
+                  <hr class="border-1 border-black ml-36
+                  lg:ml-auto w-16 lg:w-24 mb-5">
+                  <p class="text-base font-medium">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+              <div>
+                  <i class="fa-brands fa-apple"></i>
+              </div>
+          </div>
+          <div class="flex flex-col-reverse lg:flex-row items-center gap-5">
+              
+              <div>
+                  <h2 class="text-2xl font-extrabold mb-5">Sustainable Practice</h2>
+                  <hr class="border-1 border-black ml-36
+                  lg:ml-auto w-16 lg:w-24 mb-5">
+                  <p class="text-base font-medium">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+              <div>
+                  <i class="fa-solid fa-ice-cream"></i>
+              </div>
+          </div>
+          <div class="flex flex-col-reverse lg:flex-row items-center gap-5">
+              
+              <div>
+                  <h2 class="text-2xl font-extrabold mb-5">The Benefits Only</h2>
+                  <hr class="border-1 border-black ml-36
+                  lg:ml-auto w-16 lg:w-24 mb-5">
+                  <p class="text-base font-medium">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+              <div>
+                  <i class="fa-regular fa-thumbs-up"></i>
+              </div>
+          </div>
+          
+          
+      </div>
+  </div>
+</section>
+    
+                  
+            
+          
+          
+  
+  
+      </main>         
+
+
+        </body>
